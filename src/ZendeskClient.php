@@ -51,7 +51,9 @@ class ZendeskClient extends ZendeskAbstract
     }
 
     /**
-     * Pass any method calls onto $this->client
+     * Pass any method calls onto $this->client. We don't need to
+     * check if the method is callable, because the client uses the
+     * magic __call method as well, so it will always return true.
      *
      * @param string $method
      * @param array $args
@@ -67,7 +69,7 @@ class ZendeskClient extends ZendeskAbstract
     }
 
     /**
-     * Pass any property calls onto $this->client
+     * Pass any property calls onto $this->client.
      *
      * @param string $property
      * @return mixed
@@ -83,7 +85,7 @@ class ZendeskClient extends ZendeskAbstract
 
 
     /**
-     * Load the config variables
+     * Load the config variables.
      *
      * @throws ConfigException
      */
@@ -94,7 +96,7 @@ class ZendeskClient extends ZendeskAbstract
         $this->token = config('zendesk.token');
         $this->auth_strategy = config('zendesk.auth_strategy', $this->auth_strategy);
 
-        // Check if the config is valid. If not, throw exception
+        // Check if the config is valid. If not, throw ConfigException
         if (!$this->isValidConfig()) {
             throw new ConfigException('Please set ZENDESK_SUBDOMAIN, ZENDESK_USERNAME and ZENDESK_TOKEN in your .env file.');
         }
@@ -114,6 +116,7 @@ class ZendeskClient extends ZendeskAbstract
 
     /**
      * Setup authentication for Zendesk
+     *
      * @throws \Zendesk\API\Exceptions\AuthException
      */
     protected function setupAuthStrategy(): void

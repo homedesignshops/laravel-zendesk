@@ -3,7 +3,8 @@
     "description": "A Laravel Zendesk wrapper for the Zendesk API client",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "zendesk/zendesk_api_client_php": "^2.2"
     },

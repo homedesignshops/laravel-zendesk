@@ -1,5 +1,12 @@
+<p align="center"><img src="https://www.feedbackcompany.com/samenvoordeel/img/logo/thumbnail/logo-thefeedbackcompany.png"></p>
+<p align="center">
+<a href="https://travis-ci.org/homedesignshops/laravel-zendesk"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/homedesignshops/laravel-zendesk"><img src="https://poser.pugx.org/homedesignshops/laravel-zendesk/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/homedesignshops/laravel-zendesk"><img src="https://poser.pugx.org/homedesignshops/laravel-zendesk/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/homedesignshops/laravel-zendesk"><img src="https://poser.pugx.org/homedesignshops/laravel-zendesk/license.svg" alt="License"></a>
+</p>
+
 # Laravel Zendesk [![Build Status](https://travis-ci.com/homedesignshops/laravel-zendesk.svg?branch=master)](https://travis-ci.com/homedesignshops/laravel-zendesk)
-[![Home Design Shops logo][logo]](https://www.homedesignshops.nl)
 
 This package provides an elegant wrapper for the official [Zendesk API](https://github.com/zendesk/zendesk_api_client_php) php library. It supports creating tickets, retrieving and updating tickets, deleting tickets, etc.
 
@@ -108,5 +115,3 @@ class TicketsClass {
 ```
 
 This package is available under the [MIT license](http://opensource.org/licenses/MIT).
-
-[logo]: https://www.feedbackcompany.com/samenvoordeel/img/logo/thumbnail/logo-thefeedbackcompany.png

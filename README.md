@@ -6,7 +6,7 @@
 <a href="https://packagist.org/packages/homedesignshops/laravel-zendesk"><img src="https://poser.pugx.org/homedesignshops/laravel-zendesk/license.svg" alt="License"></a>
 </p>
 
-# Laravel Zendesk [![Build Status](https://travis-ci.com/homedesignshops/laravel-zendesk.svg?branch=master)](https://travis-ci.com/homedesignshops/laravel-zendesk)
+# Laravel Zendesk
 
 This package provides an elegant wrapper for the official [Zendesk API](https://github.com/zendesk/zendesk_api_client_php) php library. It supports creating tickets, retrieving and updating tickets, deleting tickets, etc.
 
@@ -48,8 +48,7 @@ The subdomain part of your Zendesk organisation.
 `ZENDESK_USERNAME`\
 The username for the authenticating account in your Zendesk organisation.
 
-- `ZENDESK_TOKEN`
-
+`ZENDESK_TOKEN`\
 The API access token. This can be a `basic` token or your `oauth` token. You can manage your tokens one at: `https://{SUBDOMAIN}.zendesk.com/agent/admin/api/settings`
 
 ## Usage

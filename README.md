@@ -15,7 +15,7 @@ This package provides an elegant wrapper for the official [Zendesk API](https://
 Install this package via Composer using:
 
 ```bash
-composer require homedesignshops/zendesk-laravel
+composer require homedesignshops/laravel-zendesk
 ```
 
 > Laravel 5.5+ users: Skip the Service Provider installation below, because the package is configured for [Package Discovery](https://laravel.com/docs/5.7/packages#package-discovery).
